@@ -1,24 +1,16 @@
 .preloader {
     position: fixed;
-    filter: blur(0px);
     width: 100%;
     height: 100%;
-    background: white;
     z-index: 99999;
 
     .item {
         position: absolute;
-        filter: blur(0px);
         width: 100px;
         height: 100px;
-        left: 50%;
-        top: 50%;
-        margin-left: -50px;
-        margin-top: -50px;
+        // margin-left: -50px;
+        // margin-top: -50px;
 
-        img{
-            filter: blur(0px);
-        }
     }
 
     .hide {
@@ -27,10 +19,15 @@
 }
 
 .Preimage {
-    filter: blur(10px);
-    background: url(../img/landing.png);
+    background: url(../img/blurlanding.jpg);
     position: relative;
     width: 100vw;
     height: 100%;
-    z-index: 10;
+
+    .blue{
+        background-color: rgba(111, 150, 255, 0.507);
+        position: relative;
+        width: 100vw;
+        height: 100%;
+    }
 }
