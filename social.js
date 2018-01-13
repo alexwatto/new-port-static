@@ -2,7 +2,8 @@ $( document ).ready(function() {
   $('i').hide();
 })
 
-$(window).on('load', function(){
+$(window).on('load', function() {
+if($('.preloader').is(':hidden')){
   $('i').show();
 
   var facebPos = $('#facebook').position();
@@ -94,4 +95,5 @@ $(window).on('load', function(){
     }, 250);
   }, 2000);
   
+}
 })

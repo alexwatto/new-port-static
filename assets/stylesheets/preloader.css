@@ -1,0 +1,38 @@
+/* line 1, ../sass/preloader.scss */
+.preloader {
+  position: fixed;
+  filter: blur(0px);
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 99999;
+}
+/* line 9, ../sass/preloader.scss */
+.preloader .item {
+  position: absolute;
+  filter: blur(0px);
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+/* line 19, ../sass/preloader.scss */
+.preloader .item img {
+  filter: blur(0px);
+}
+/* line 24, ../sass/preloader.scss */
+.preloader .hide {
+  display: none;
+}
+
+/* line 29, ../sass/preloader.scss */
+.Preimage {
+  filter: blur(10px);
+  background: url(../img/landing.png);
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+}
