@@ -1,5 +1,65 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+/* line 1, ../sass/preloader.scss */
+.Preimage {
+  background: url(../img/blurlanding.jpg);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 6, ../sass/preloader.scss */
+.Preimage .blue {
+  background-color: rgba(111, 150, 255, 0.507);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, ../sass/preloader.scss */
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+@media screen and (max-width: 900px) {
+  /* line 20, ../sass/preloader.scss */
+  .preloader .item {
+    position: absolute;
+    max-width: 45%;
+    max-height: 45%;
+    top: 50%;
+    left: 50%;
+    overflow: visible;
+  }
+  /* line 27, ../sass/preloader.scss */
+  .preloader .item img {
+    position: relative;
+    width: 100%;
+    margin-top: -50%;
+    margin-left: -50%;
+  }
+}
+/* line 35, ../sass/preloader.scss */
+.preloader .item {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  overflow: visible;
+}
+/* line 41, ../sass/preloader.scss */
+.preloader .item img {
+  position: relative;
+  width: 100%;
+  margin-top: -30%;
+  margin-left: -50%;
+}
+/* line 47, ../sass/preloader.scss */
+.preloader .item .hide {
+  display: none;
+}
+
 /* line 1, ../sass/global.scss */
 html, body {
   padding: 0;
@@ -14,44 +74,11 @@ section {
   width: 100%;
 }
 
-/* line 1, ../sass/preloader.scss */
-.preloader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-}
-/* line 7, ../sass/preloader.scss */
-.preloader .item {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-}
-/* line 16, ../sass/preloader.scss */
-.preloader .hide {
-  display: none;
-}
-
-/* line 21, ../sass/preloader.scss */
-.Preimage {
-  background: url(../img/blurlanding.jpg);
-  position: relative;
-  width: 100vw;
-  height: 100%;
-}
-/* line 27, ../sass/preloader.scss */
-.Preimage .blue {
-  background-color: rgba(111, 150, 255, 0.507);
-  position: relative;
-  width: 100vw;
-  height: 100%;
-}
-
 /* line 1, ../sass/landing.scss */
 .image {
-  background: url(../img/landing.png);
+  background: url(../img/landing.jpg);
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   z-index: 10;
 }
@@ -59,7 +86,7 @@ section {
 /* line 9, ../sass/landing.scss */
 .landing {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   z-index: 10;
   background-color: rgba(0, 51, 192, 0.384);
@@ -69,7 +96,7 @@ section {
 /* line 18, ../sass/landing.scss */
 .landing .content {
   position: relative;
-  width: 700px;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
 }
@@ -77,7 +104,7 @@ section {
 .landing .content .text {
   text-align: center;
   margin: auto;
-  width: 700px;
+  width: 100%;
   height: 520px;
 }
 /* line 32, ../sass/landing.scss */

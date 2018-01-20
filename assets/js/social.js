@@ -3,7 +3,8 @@ $( document ).ready(function() {
 })
 
 $(window).on('load', function() {
-if($('.preloader').is(':hidden')){
+
+  setTimeout(function() {
   $('i').show();
 
   var facebPos = $('#facebook').position();
@@ -95,5 +96,5 @@ if($('.preloader').is(':hidden')){
     }, 250);
   }, 2000);
   
-}
+}, 7500)
 })
