@@ -1,0 +1,26 @@
+{
+  "name": "alexwatto.co.uk",
+  "version": "1.0.0",
+  "description": "Alex Watson Portfolio",
+  "main": "preloader.js",
+  "scripts": {
+    "scss": "node-sass assets/sass/main.scss assets/stylesheets/main.css --output-style compressed",
+    "js": "uglifyjs assets/js/main.js -o assets/js/foo.min.js",
+    "build": "concurrently --kill-others \"node-sass assets/sass/main.scss assets/stylesheets/main.css --output-style compressed\" \"npm run wp-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwatto/new-port-static.git"
+  },
+  "author": "Alex Watson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwatto/new-port-static/issues"
+  },
+  "homepage": "https://github.com/alexwatto/new-port-static#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.7.2",
+    "uglify-js": "^3.3.12"
+  }
+}
