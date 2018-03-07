@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/alexwatto/new-port-static#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
     "concurrently": "^3.5.1",
     "node-sass": "^4.7.2",
     "uglify-js": "^3.3.12"
