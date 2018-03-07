@@ -1,2 +1,2 @@
-import 'preloader'
-import 'social'
+import preloader from "./preloader.js"
+import social from "./social"
