@@ -1,7 +1,3 @@
-function social(){
-
-
-
 $( document ).ready(function() {
   $('i').hide();
 })
@@ -102,6 +98,3 @@ $(window).on('load', function() {
   
 }, 7500)
 })
-}
-
-export * from social() 
