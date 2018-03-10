@@ -19,9 +19,16 @@
   },
   "homepage": "https://github.com/alexwatto/new-port-static#readme",
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "concurrently": "^3.5.1",
-    "node-sass": "^4.7.2",
-    "uglify-js": "^3.3.12"
+    "gulp": "^3.9.1",
+    "jshint-stylish": "^2.2.1",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5"
   }
 }
