@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/alexwatto/new-port-static#readme",
   "dependencies": {
+    "clean-css": "^4.1.11",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-uglify": "^3.0.0",
     "jshint-stylish": "^2.2.1",
     "node-sass": "^4.7.2"
   },

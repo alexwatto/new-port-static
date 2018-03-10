@@ -5,9 +5,8 @@ var gulp   = require('gulp'),
     sourcemaps = require('gulp-sourcemaps');
     concat = require('gulp-concat');
     gutil = require('gulp-util');
-
-// define the default task and add the watch task to it
-gulp.task('default', ['watch']);
+    uglify = require('gulp-uglify');
+    cleanCSS = require('gulp-clean-css');
 
 // configure the jshint task
 gulp.task('jshint', function() {
@@ -19,24 +18,25 @@ gulp.task('jshint', function() {
 gulp.task('build-css', function() {
     return gulp.src('source/sass/*.scss')
       .pipe(sass())
-      .pipe(gulp.dest('public/assets/stylesheets/'));
-  });
+      .pipe(gulp.dest('public/assets/stylesheets/src'));
+});
 
-  gulp.task('build-js', function() {
+gulp.task('build-js', function() {
     return gulp.src('source/js/**/*.js')
       .pipe(sourcemaps.init())
-        .pipe(concat('alexwatto.js'))
+        .pipe(concat('alexwatto.min.js'))
         //only uglify if gulp is ran with '--type production'
-        .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop()) 
-      .pipe(sourcemaps.write())
+        .pipe(uglify()) 
+        .pipe(sourcemaps.write())
       .pipe(gulp.dest('public/assets/js/'));
-  });
-  
-  /* updated watch task to include sass */
-  
-  gulp.task('watch', function() {
-    gulp.watch('source/js/**/*.js', ['jshint']);
-    gulp.watch('source/sass/**/*.scss', ['build-css']);
-    gulp.watch('source/js/**/*.js', ['build-js']);
-    
-  });
+    });
+
+gulp.task('minify-css', () => {
+    return gulp.src('public/assets/stylesheets/src/*.css')
+    .pipe(sourcemaps.init())
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
+      .pipe(gulp.dest('public/assets/stylesheets'));
+    });
+
+gulp.task('default', ['jshint', 'build-css', 'build-js', 'minify-css']);

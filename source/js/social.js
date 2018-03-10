@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   $('i').hide();
-})
+});
 
 $(window).on('load', function() {
 
@@ -96,5 +96,5 @@ $(window).on('load', function() {
     }, 250);
   }, 2000);
   
-}, 7500)
-})
+}, 7500);
+});
