@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
 .Preimage {
-  background: url(../img/blurlanding.jpg);
+  background: url(../img/landing.png);
   position: relative;
   width: 100%;
   height: 100%; }
@@ -54,10 +54,10 @@ section {
   width: 100%; }
 
 .image {
-  background: url(../img/landing.jpg);
+  background: url(../img/landing.png);
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 10; }
 
 .landing {
@@ -146,13 +146,13 @@ section {
     .social i#github:hover {
       color: black; }
     .social i#linkedin:hover {
-      color: #0177B5; }
+      color: #0077B5; }
     .social i#code:hover {
       color: #29A329; }
     .social i#stack:hover {
       color: #FF9900; }
     .social i#facebook:hover {
-      color: #0177B5; }
+      color: #3B5998; }
 
 .fa {
   display: inline-block;
@@ -255,82 +255,12 @@ section {
   .about p {
     text-align: center;
     font-size: 14px;
-    width: 250px;
     margin: 30px auto;
     color: #a4a4a4;
     line-height: 26px;
     letter-spacing: 0;
     position: relative;
     font-weight: 300; }
-  .about .column-one {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px; }
-    .about .column-one .circle-one {
-      height: 100px;
-      position: relative;
-      margin: 0 auto;
-      border: 2px solid #f0f0f0;
-      background: url(../img/code.png) white no-repeat center center;
-      -moz-border-radius: 100px;
-      -webkit-border-radius: 100px;
-      border-radius: 100px;
-      width: 100px;
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
-      .about .column-one .circle-one:hover {
-        border: 2px solid #0033c0; }
-  .about .column-two {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px; }
-    .about .column-two .circle-two {
-      height: 100px;
-      position: relative;
-      margin: 0 auto;
-      border: 2px solid #f0f0f0;
-      background: url(../img/bat.png) white no-repeat center center;
-      -moz-border-radius: 100px;
-      -webkit-border-radius: 100px;
-      border-radius: 100px;
-      width: 100px;
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
-      .about .column-two .circle-two:hover {
-        border: 2px solid #0033c0; }
-  .about .column-three {
-    margin-top: 40px;
-    width: 300px;
-    float: left;
-    margin-bottom: 70px;
-    height: 350px; }
-    .about .column-three .circle-three {
-      height: 100px;
-      position: relative;
-      margin: 0 auto;
-      border: 2px solid #f0f0f0;
-      background: url(../img/tick.png) white no-repeat center center;
-      -moz-border-radius: 100px;
-      -webkit-border-radius: 100px;
-      border-radius: 100px;
-      width: 100px;
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
-      .about .column-three .circle-three:hover {
-        border: 2px solid #0033c0; }
   .about hr.break {
     margin-top: 30px;
     background-color: #f2f2f2;
@@ -532,3 +462,125 @@ p {
       justify-content: center;
       height: 32px;
       width: 32px; }
+
+/* Contact */
+.contact {
+  position: relative;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  overflow: hidden;
+  margin-bottom: 300px; }
+
+.content {
+  position: relative;
+  width: 900px;
+  overflow: hidden;
+  margin: 60px auto 65px auto; }
+  .content .form {
+    width: 455px;
+    overflow: hidden;
+    height: auto;
+    float: left; }
+    .content .form .column {
+      width: 180px;
+      overflow: hidden;
+      height: auto;
+      float: left;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .content .form .column-2 {
+      width: 210px;
+      padding-left: 60px;
+      overflow: hidden;
+      height: auto;
+      float: left;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .content .form .column-3 {
+      width: 450px;
+      overflow: hidden;
+      height: auto;
+      float: left;
+      letter-spacing: 1px; }
+    .content .form .contact-text {
+      width: 405px;
+      overflow: hidden;
+      height: auto;
+      font-weight: 300;
+      float: left;
+      padding-left: 40px;
+      color: black;
+      font-size: 14px;
+      line-height: 26px; }
+
+h1 {
+  font-size: 34px;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+hr {
+  color: black;
+  margin-top: 30px;
+  background-color: black;
+  height: 1px;
+  width: 106px;
+  border: 0; }
+
+strong {
+  font-weight: 700; }
+
+input {
+  width: 180px;
+  height: 40px;
+  background: #f8f7f7;
+  border-top: 1px solid #333;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #333;
+  font-weight: 300;
+  line-height: 40px;
+  padding-left: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px; }
+  input:focus {
+    background: #f4f4f4; }
+  input .submit {
+    width: 100px;
+    height: 34px;
+    float: right;
+    margin: 20px 10px 0 0;
+    border: 0;
+    font-weight: 700;
+    text-align: right;
+    background: none;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    -ms-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in; }
+
+textarea {
+  width: 420px;
+  height: 150px;
+  border-top: 1px solid #333;
+  border-bottom: 0;
+  line-height: 20px;
+  border-left: 0;
+  border-right: 0;
+  background: #f8f7f7;
+  color: #333;
+  font-weight: 300;
+  padding: 15px 0 0 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px; }
+  textarea:focus {
+    background: #f4f4f4; }

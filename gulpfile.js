@@ -35,8 +35,7 @@ gulp.task('minify-css', () => {
     return gulp.src('public/assets/stylesheets/src/*.css')
     .pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
-      .pipe(gulp.dest('public/assets/stylesheets'));
+    .pipe(gulp.dest('public/assets/stylesheets'));
     });
 
 gulp.task('default', ['jshint', 'build-css', 'build-js', 'minify-css']);

@@ -1,8 +1,8 @@
 .image{
-    background: url(../img/landing.jpg);
+    background: url(../img/landing.png);
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 10;
 }
 
@@ -120,7 +120,7 @@
         }
 
         &#linkedin:hover {
-            color: #0177B5;
+            color: #0077B5;
         }
 
         &#code:hover {
@@ -132,7 +132,7 @@
         }
 
         &#facebook:hover {
-            color: #0177B5;
+            color: #3B5998;
         }
     }
 }

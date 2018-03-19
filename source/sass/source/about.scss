@@ -61,100 +61,12 @@
     p {
         text-align: center;
         font-size: 14px;
-        width: 250px;
         margin: 30px auto;
         color: #a4a4a4;
         line-height: 26px;
         letter-spacing: 0;
         position: relative;
         font-weight: 300;
-    }
-
-    .column-one {
-        margin-top: 40px;
-        width: 300px;
-        float: left;
-        margin-bottom: 70px;
-        height: 350px;
-
-        .circle-one {
-            height: 100px;
-            position: relative;
-            margin: 0 auto;
-            border: 2px solid #f0f0f0;
-            background: url(../img/code.png) white no-repeat center center;
-            -moz-border-radius: 100px;
-            -webkit-border-radius: 100px;
-            border-radius: 100px;
-            width: 100px;
-            -webkit-transition: all 0.2s ease-in;
-            -moz-transition: all 0.2s ease-in;
-            -ms-transition: all 0.2s ease-in;
-            -o-transition: all 0.2s ease-in;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-                border: 2px solid #0033c0;
-            }
-        }
-    }
-
-    .column-two {
-        margin-top: 40px;
-        width: 300px;
-        float: left;
-        margin-bottom: 70px;
-        height: 350px;
-
-        .circle-two {
-            height: 100px;
-            position: relative;
-            margin: 0 auto;
-            border: 2px solid #f0f0f0;
-            background: url(../img/bat.png) white no-repeat center center;
-            -moz-border-radius: 100px;
-            -webkit-border-radius: 100px;
-            border-radius: 100px;
-            width: 100px;
-            -webkit-transition: all 0.2s ease-in;
-            -moz-transition: all 0.2s ease-in;
-            -ms-transition: all 0.2s ease-in;
-            -o-transition: all 0.2s ease-in;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-                border: 2px solid #0033c0;
-            }
-        }
-    }
-
-    .column-three {
-        margin-top: 40px;
-        width: 300px;
-        float: left;
-        margin-bottom: 70px;
-        height: 350px;
-
-        .circle-three {
-            height: 100px;
-            position: relative;
-            margin: 0 auto;
-            border: 2px solid #f0f0f0;
-            background: url(../img/tick.png) white no-repeat center center;
-            -moz-border-radius: 100px;
-            -webkit-border-radius: 100px;
-            border-radius: 100px;
-            width: 100px;
-            -webkit-transition: all 0.2s ease-in;
-            -moz-transition: all 0.2s ease-in;
-            -ms-transition: all 0.2s ease-in;
-            -o-transition: all 0.2s ease-in;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-                border: 2px solid #0033c0;
-            }
-        }
     }
 
     hr.break {

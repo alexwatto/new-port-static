@@ -10,9 +10,7 @@ $(window).on('load', function() {
   var facebPos = $('#facebook').position();
   var twitterPos = $('#twitter').position();
   var githubPos = $('#github').position();
-  var stackPos = $('#stack').position();
   var linkedinPos = $('#linkedin').position();
-  var codePos = $('#code').position();
   var imgPos = $('.App-logo').position();
   
   $('i').css({
