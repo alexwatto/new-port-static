@@ -215,6 +215,11 @@ section {
     width: 900px;
     margin: 0 auto;
     overflow: hidden; }
+    .about .content .warning-content {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      margin: 45px 0 0 0; }
   .about h1 {
     font-size: 34px;
     color: black;

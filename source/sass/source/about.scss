@@ -7,6 +7,14 @@
         width: 900px;
         margin: 0 auto;
         overflow: hidden;
+
+        .warning-content {
+          position: relative;
+          width:100%;
+          text-align:center;
+          margin:45px 0 0 0;
+          
+          }
     }
 
     h1 {
