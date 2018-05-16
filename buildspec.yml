@@ -3,10 +3,32 @@ phases:
  install:
    commands:
      - echo "install step"
- build:
-   commands:
-     - npm install
-     - gulp
+phases:
+  install:
+    commands:
+      - echo INSTALL started on `date`
+      - echo `pwd`
+      - npm install bower -g
+      - npm install grunt -g
+      - npm install gulp -g
+      - npm install
+      - bower install --allow-root
+      - echo INSTALL completed on `date`
+  pre_build:
+    commands:
+      - echo PRE_BUILD started on `date`
+      - echo `pwd`
+      - bower -v
+      - node -v
+      - npm -v
+      - gulp -v
+      - echo PRE_BUILD completed on `date`
+  build:
+    commands:
+      - echo BUILD started on `date`
+      - gulp
+      - gulp default
+      - echo BUILD completed on `date`
  post_build:
    commands:
-     - aws s3 sync --delete . "s3://<your-static-website-bucket>"
+     - aws s3 sync --delete . "s3://aws-website-wwwalexwattocouk-nxpfu"
