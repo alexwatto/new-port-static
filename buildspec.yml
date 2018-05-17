@@ -13,5 +13,5 @@ phases:
      - aws s3 sync --delete . "s3://aws-website-devalexwattocouk-wca6c"
 artifacts:
   files: 
-    - 'public/**/*'
+   - 'public/index.html'
   discard-paths: yes
