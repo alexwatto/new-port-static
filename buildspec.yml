@@ -13,6 +13,7 @@ phases:
      - rm -rf bower_components
      - aws s3 sync --delete . "s3://aws-website-wwwalexwattocouk-nxpfu"
 artifacts:
- files:
-   - public/*
- discard-paths: yes
+  files: 
+    - '**/*'
+  base-directory: 'public*'
+  discard-paths: yes
