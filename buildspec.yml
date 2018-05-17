@@ -11,9 +11,9 @@ phases:
    commands:
      - rm -rf node_modules
      - rm -rf bower_components
-     - aws s3 sync --delete . "s3://aws-website-wwwalexwattocouk-nxpfu"
+     - aws s3 sync --delete . "s3://aws-website-devalexwattocouk-wca6c"
 artifacts:
   files: 
-    - '**/*'
+    - '/public/*'
   base-directory: 'public*'
   discard-paths: yes
