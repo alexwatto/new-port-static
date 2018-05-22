@@ -9,7 +9,7 @@ phases:
  post_build:
    commands:
      - rm -rf node_modules
-     - aws s3 sync public/ s3://aws-website-devalexwattocouk-wca6c
+     - aws s3 sync public/ s3://aws-website-wwwalexwattocouk-nxpfu
 artifacts:
   files: 
    - 'public/index.html'
