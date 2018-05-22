@@ -9,9 +9,8 @@ phases:
  post_build:
    commands:
      - rm -rf node_modules
-     - rm -rf bower_components
+     - aws s3 sync public/ s3://aws-website-devalexwattocouk-wca6c
      - aws s3 sync --delete . "s3://aws-website-devalexwattocouk-wca6c"
 artifacts:
   files: 
    - 'public/index.html'
-  discard-paths: yes
