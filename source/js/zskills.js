@@ -1,4 +1,4 @@
-import Chart from "chart.js";
+import Chart from "../../node_modules/chart.js";
 var myChart = new Chart(ctx, {
     type: 'radar',
     data: {
