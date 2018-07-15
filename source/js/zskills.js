@@ -1,5 +1,5 @@
 import * as Chart from "../../node_modules/chart.js/dist/Chart.js";
-var myChart = new Chart(ctx, {
+var myChart = new Chart({
     type: 'radar',
     data: {
         labels: ["AWS", "Azure", "Octopus Deploy", "TeamCity", "Terraform", "Docker", "IIS", "HTML", "SASS", "Javascript"],
