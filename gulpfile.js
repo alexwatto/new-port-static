@@ -5,7 +5,7 @@ var gulp   = require('gulp'),
     sourcemaps = require('gulp-sourcemaps');
     concat = require('gulp-concat');
     gutil = require('gulp-util');
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify-es').default;
     cleanCSS = require('gulp-clean-css');
 
 // configure the jshint task
