@@ -12,4 +12,3 @@ phases:
 artifacts:
   files: 
    - 'public/index.html'
-   - 'node_modules/Chart.js/*'
